@@ -12,7 +12,7 @@ public partial class _Default : System.Web.UI.Page {
     protected void Page_Load(object sender, EventArgs e) {
 
     }
-    protected void ASPxCallback1_Callback(object source, DevExpress.Web.ASPxCallback.CallbackEventArgs e) {
+    protected void ASPxCallback1_Callback(object source, DevExpress.Web.CallbackEventArgs e) {
         string RootFolder = Server.MapPath(@"~\");
         bool overwrite = e.Parameter == "1";
         string path = Path.Combine(fm.SelectedFolder.RelativeName, tbFileName.Text);

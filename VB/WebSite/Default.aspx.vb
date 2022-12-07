@@ -14,7 +14,7 @@ Partial Public Class _Default
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
 	End Sub
-	Protected Sub ASPxCallback1_Callback(ByVal source As Object, ByVal e As DevExpress.Web.ASPxCallback.CallbackEventArgs)
+	Protected Sub ASPxCallback1_Callback(ByVal source As Object, ByVal e As DevExpress.Web.CallbackEventArgs)
 		Dim RootFolder As String = Server.MapPath("~\")
 		Dim overwrite As Boolean = e.Parameter = "1"
 		Dim path1 As String = Path.Combine(fm.SelectedFolder.RelativeName, tbFileName.Text)
